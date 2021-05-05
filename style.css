@@ -1,8 +1,10 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Montserrat:wght@400;600&display=swap');
+
 
 :root{
-    --fondo: #FF97CE;
+    --fondo: #FFD7F4;
     --figura: #ddd;
 }
 
@@ -14,7 +16,7 @@
 body {
     font-family: Mouse Memoirs, sans-serif;
     background: var(--fondo);
-    color: rgba(0, 0, 0);
+    color: rgba(52, 4, 64);
 }
 
 body.portada{
@@ -24,12 +26,12 @@ body.portada{
 
 a {
     font-weight: bold;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(2, 1, 25, 0.5);
     text-decoration: none;
 }
 
 a:hover {
-    color: rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.8);
 }
 
 :hover{
@@ -109,7 +111,7 @@ main article{
     float:left;
     margin:1%;
     width:18%;
-    background:rgba(0,0,255,0.1);
+    background:rgba(0,0,255,0.05);
 }
 
 main article img{
@@ -188,5 +190,5 @@ main div#mapa{
 }
 
 main canvas#grafico{
-    background:#FFB8E4;
+    background:#E1B5E5;
 }
