@@ -25,7 +25,7 @@
             </footer>
         </div>
 <script>
-    var mymap = L.map('mapa').setView([-27.201389,-109.452778], 2);
+    var mymap = L.map('mapa').setView([33.186667,35.619167], 2);
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
         maxZoom: 18,
         id: 'mapbox/light-v10',
@@ -34,15 +34,11 @@
     }).addTo(mymap);
     L.marker([-27.201389,-109.452778]).addTo(mymap).bindPopup("<b>Motu Nui</b>. Aquí se ambientó Moana.");
 
-     var mymap = L.map('mapa').setView([-27.201389,-109.452778], 2);
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-        maxZoom: 18,
-        id: 'mapbox/light-v10',
-        tileSize: 512,
-        zoomOffset: -1
-    }).addTo(mymap);
     L.marker([57.0,-5.0]).addTo(mymap).bindPopup("<b>Escocia</b>. Aquí se ambientó Valiente.");
 
+    L.marker([55.69286, 12.59926]).addTo(mymap).bindPopup("<b>Dinamarca</b>.Aquí se encuentra la estatua de la sirenita ");
+    L.marker([33.186667, 35.619167]).addTo(mymap).bindPopup("<b>Agrabah</b> En la orilla del rio jordán se ubica Aladdin");
+    L.marker([39.905, 116.391389]).addTo(mymap).bindPopup("<b>China</b> Aquí se ambientó Mulan");
 </script>
     </body>
 </html>
