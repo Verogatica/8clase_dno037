@@ -32,13 +32,40 @@
         tileSize: 512,
         zoomOffset: -1
     }).addTo(mymap);
-    L.marker([-27.201389,-109.452778]).addTo(mymap).bindPopup("<b>Motu Nui</b>. Aquí se ambientó Moana.");
 
-    L.marker([57.0,-5.0]).addTo(mymap).bindPopup("<b>Escocia</b>. Aquí se ambientó Valiente.");
+            var greenIcon = L.icon({
+    iconUrl: 'images/sirenitaa.png',
 
-    L.marker([55.69286, 12.59926]).addTo(mymap).bindPopup("<b>Dinamarca</b>.Aquí se encuentra la estatua de la sirenita ");
-    L.marker([33.186667, 35.619167]).addTo(mymap).bindPopup("<b>Agrabah</b> En la orilla del rio jordán se ubica Aladdin");
-    L.marker([39.905, 116.391389]).addTo(mymap).bindPopup("<b>China</b> Aquí se ambientó Mulan");
+    iconSize:     [50, 50], // size of the icon
+    }); 
+        var blueIcon = L.icon({
+    iconUrl: 'images/valiente.png',
+
+    iconSize:     [40, 40], // size of the icon
+    }); 
+        var redIcon = L.icon({
+    iconUrl: 'images/mulan.png',
+
+    iconSize:     [45, 45], // size of the icon
+    }); 
+        var pinkIcon = L.icon({
+    iconUrl: 'images/aladdin.png',
+
+    iconSize:     [44, 44], // size of the icon
+    }); 
+        var blackIcon = L.icon({
+    iconUrl: 'images/moana.png',
+
+    iconSize:     [40, 40], // size of the icon
+    }); 
+
+    L.marker([-27.201389,-109.452778], {icon: blackIcon}).addTo(mymap).bindPopup("<b>Motu Nui</b>. Aquí se ambientó Moana.");
+
+    L.marker([57.0,-5.0], {icon: blueIcon}).addTo(mymap).bindPopup("<b>Escocia</b>. Aquí se ambientó Valiente.");
+
+    L.marker([55.69286, 12.59926], {icon: greenIcon}).addTo(mymap).bindPopup("<b>Dinamarca</b>.Aquí se ubica la estatua de la sirenita ");
+    L.marker([33.186667, 35.619167], {icon: pinkIcon}).addTo(mymap).bindPopup("<b>Agrabah</b> En la orilla del rio jordán se ambienta Aladdin");
+    L.marker([39.905, 116.391389], {icon: redIcon}).addTo(mymap).bindPopup("<b>China</b> Aquí se ambientó Mulan");
 </script>
     </body>
 </html>
